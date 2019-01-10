@@ -18,6 +18,12 @@
   	<description></description>
   	<servlet-class>myservlets.MyPostServlet</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>WelcomeServ</servlet-name>
+  	<display-name>WelcomeServ</display-name>
+  	<description></description>
+  	<servlet-class>myservlets.WelcomeServ</servlet-class>
+  </servlet>
   
   <!-- <servlet-mapping>
   	<servlet-name>MyGetServlet</servlet-name>
@@ -27,5 +33,9 @@
   <servlet-mapping>
   	<servlet-name>MyPostServlet</servlet-name>
   	<url-pattern>/auslesen</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>WelcomeServ</servlet-name>
+  	<url-pattern>/index</url-pattern>
   </servlet-mapping>
 </web-app>

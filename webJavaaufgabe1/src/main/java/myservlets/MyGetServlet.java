@@ -29,6 +29,6 @@ public class MyGetServlet extends HttpServlet {
 		out.println("</table>");
 		out.println("</body></form>");
 		out.print("</html>");
-	}
+			}
 
 }
