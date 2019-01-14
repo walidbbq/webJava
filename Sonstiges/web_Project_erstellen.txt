@@ -1,0 +1,9 @@
+new maven projekt erstellen ->
+web auswählen -> index.jsp rausschmeisßen-> porn.xmla bearbeiten ->
+suchen im internet nach : maven tomcat embeed -> 
+auf projekt recht maus taste und propertiet auswählen  -> 
+java build path -> order und export -> Maven Dependencies und soweiter auswählen -> 
+maven project updaten -> java resources -> src main recht maus taste und servlet class erstellen -> next -> Mapping nennen (optional)
+
+MiME type schreiben ("/text.html") -> beispiel
+ 

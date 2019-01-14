@@ -1,0 +1,41 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  
+<!--   <servlet>
+  	<servlet-name>MyGetServlet</servlet-name>
+  	<display-name>MyGetServlet</display-name>
+  	<description></description>
+  	<servlet-class>myservlets.MyGetServlet</servlet-class>
+  </servlet> -->
+  
+  <servlet>
+  	<servlet-name>MyPostServlet</servlet-name>
+  	<display-name>MyPostServlet</display-name>
+  	<description></description>
+  	<servlet-class>myservlets.MyPostServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>WelcomeServ</servlet-name>
+  	<display-name>WelcomeServ</display-name>
+  	<description></description>
+  	<servlet-class>myservlets.WelcomeServ</servlet-class>
+  </servlet>
+  
+  <!-- <servlet-mapping>
+  	<servlet-name>MyGetServlet</servlet-name>
+  	<url-pattern>/input</url-pattern>
+  </servlet-mapping> -->
+  
+  <servlet-mapping>
+  	<servlet-name>MyPostServlet</servlet-name>
+  	<url-pattern>/auslesen</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>WelcomeServ</servlet-name>
+  	<url-pattern>/index</url-pattern>
+  </servlet-mapping>
+</web-app>
