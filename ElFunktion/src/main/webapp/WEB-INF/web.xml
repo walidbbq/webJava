@@ -1,0 +1,18 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<!--suppress ALL -->
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+    <!--<servlet>-->
+        <!--&lt;!&ndash;suppress ServletWithoutMappingInspection &ndash;&gt;-->
+        <!--<servlet-name>staticMethodClass</servlet-name>-->
+        <!--<servlet-class>elFunktionBasic.staticMethodClass</servlet-class>-->
+    <!--</servlet>-->
+
+    <!--<servlet-mapping>-->
+        <!--<servlet-name>staticMethodClass</servlet-name>-->
+        <!--<url-pattern>/index</url-pattern>-->
+    <!--</servlet-mapping>-->
+</web-app>
