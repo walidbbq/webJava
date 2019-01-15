@@ -14,12 +14,12 @@
     <title>ProduktWahl</title>
 </head>
 
-<form action="index" method="post">
+<form  method="post">
     <table>
         <tr><td><h3>Produkt</h3></td><td><h3>Preis</h3></td></tr>
-        <c:forEach var="produkt" items="${applicationScope.produkte}" varStatus="i">
+        <c:forEach var="produkt" items="${applicationScope.produkte}">
             <tr><td>${produkt.name}</td><td>${produkt.preis}</td> <td>
-            <input type="radio" name="produktwahl" value="${i.index}">
+            <input type="radio" name="produktwahl" value="${produkt.id}">
         </td></tr>
 
         </c:forEach>

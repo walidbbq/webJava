@@ -15,8 +15,8 @@ public class IndexControl extends javax.servlet.http.HttpServlet {
 
     protected void doGet(javax.servlet.http.HttpServletRequest request, javax.servlet.http.HttpServletResponse response)
             throws javax.servlet.ServletException, IOException {
-        ProduktRepository pr = new ProduktRepository();
-        this.getServletContext().setAttribute("produkte",pr.getAllItems());
+//        ProduktRepository pr = new ProduktRepository();
+        this.getServletContext().setAttribute("produkte",ProduktRepository.getAllItems());
 
 
         RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/produktWahl.jsp");
@@ -29,11 +29,18 @@ public class IndexControl extends javax.servlet.http.HttpServlet {
         String auswahl = request.getParameter("produktwahl");
         int auswahlToInt = Integer.parseInt(auswahl);
 
-        ProduktRepository pr = new ProduktRepository();
-        List <Produkt> produkts = pr.getAllItems();
-
+//        ProduktRepository pr = new ProduktRepository();
+        List <Produkt> produkts = ProduktRepository.getAllItems();
         HttpSession session = request.getSession();
-        session.setAttribute("ProduktSession",produkts.get(auswahlToInt));
+
+
+        for (Produkt produkt: produkts){
+            if (auswahlToInt==produkt.getId()) {
+                session.setAttribute("ProduktSession", produkt);
+                break;
+            }
+        }
+
         response.getWriter().println(auswahl);
 //        response.getWriter().println(produkts.get(auswahlToInt).getName());
 
